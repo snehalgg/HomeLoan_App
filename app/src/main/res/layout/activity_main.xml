@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:id="@+id/parentLayout">
+
+        <!-- Header -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@color/head">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="APNA HOME LOAN"
+                android:textSize="24sp"
+                android:fontFamily="@font/times_new_roman"
+                android:textStyle="bold"
+                android:textColor="#ECF0F1 "/>
+
+            <ImageView
+                android:id="@+id/mnuButton"
+                android:layout_width="60dp"
+                android:layout_height="65dp"
+                android:src="@drawable/mnu"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+
+                android:onClick="showDropdownMenu"/>
+
+
+
+        </RelativeLayout>
+
+        <!-- Carousel with 3 images -->
+        <!-- Add your carousel here (use a library like ViewPager2) -->
+
+        <!-- Calculators Section -->
+
+        <!-- Links Section -->
+        <!-- Add your links here (use TextViews or Buttons as needed) -->
+
+        <!-- YouTube Video -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <!--Chatbot-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            android:background="@drawable/custom_edittext">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Calculators"
+                android:textSize="20sp"
+                android:textColor="#333333"
+                android:fontFamily="@font/times_new_roman"
+                android:layout_marginLeft="250px"/>
+
+            <Button
+                android:id="@+id/homeEmiCalculatorButton"
+                android:layout_width="800px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="HOME EMI CALCULATOR"
+                android:backgroundTint="#2C3E50 "
+                android:textColor="#ECF0F1"/>
+
+            <Button
+                android:id="@+id/homeEmisCalculatorButton"
+                android:layout_width="800px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Home LOAN Eligibility CALCULATOR"
+                android:backgroundTint="#2C3E50"
+                android:textColor="#ECF0F1"/>
+            <!-- Apply Online Link -->
+            <TextView
+                android:id="@+id/apply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Apply Online"
+                android:textColor="#0073e6" />
+
+            <!-- FAQs Link -->
+            <TextView
+                android:id="@+id/faqs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="FAQs"
+                android:textColor="#0073e6" />
+
+            <!-- Contact Us Link -->
+            <TextView
+                android:id="@+id/contactUsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Contact Us"
+                android:textColor="#0073e6" />
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            android:background="@drawable/custom_edittext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Features and benefits of our Home Loan"
+                android:textSize="20sp"
+                android:textColor="#333333"
+                android:fontFamily="@font/times_new_roman"/>
+
+            <!-- VideoView to play the video -->
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Play Button -->
+            <MediaController
+                android:id="@+id/mediaController"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#000000" />
+
+            <!-- Paragraph -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="* Attractive interest rates to make your Home Loans affordable and easier on your pocket." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="* Customized repayment options to suit your needs." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="* No hidden charges." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="* Expert legal and technical counseling to help you make the right home buying decision." />
+
+            <!-- Disclaimer -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="* All loans are at the sole discretion of APNA HOME LOAN. For detailed terms and conditions, " />
+
+            <!-- Click Here Link -->
+            <TextView
+                android:id="@+id/view_terms_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Click Here"
+                android:textColor="#0073e6" />
+
+
+
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/chatLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_gravity="bottom"
+            tools:context=".MainActivity">
+
+            <!-- Add this inside the LinearLayout above the TextView -->
+            <Button
+                android:id="@+id/closeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                android:layout_gravity="end"
+                android:onClick="onCloseClick"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/chatView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/chat_bubble"
+                android:padding="10dp"
+                android:text=""
+                android:textSize="16sp"
+                android:visibility="gone" />
+            <!-- Add this inside the LinearLayout below the TextView -->
+            <EditText
+                android:id="@+id/userInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type your question..."
+                android:inputType="text"
+                android:visibility="gone" />
+
+
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ChatBot"
+                android:layout_marginLeft="700px"
+                android:backgroundTint="#2C3E50 "
+                android:textColor="#ECF0F1"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Footer -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#F0F0F0 "
+            android:layout_marginLeft="0px">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Corporate Office Address:- APNA House, Konoha Park, 165-166, Thousand Sunny Go, Bankai - 400 020."
+                android:textColor="#000000" />
+
+            <!-- Get Cibil Score Link -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cibilScoreLink"
+                android:text="Get Cibil Score"
+                android:textColor="#0073e6" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F0F0F0 "
+            android:padding="16dp"
+            android:layout_marginBottom="0px">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Follow us on"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/goToTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go to top"
+                android:textColor="#FAF60327"
+                android:layout_marginLeft="595px"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#F0F0F0 "
+                android:layout_marginLeft="0px">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/fb"
+                    />
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/youtube"
+                    android:layout_marginBottom="25px"/>
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/insta"
+                    android:layout_marginBottom="25px"/>
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

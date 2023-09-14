@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="head">#2C3E50 </color>
+    <color name="apply_now_button_color">#E2ACEC</color>
+    <color name="track">#EDA1B7</color>
+    <color name="insurance">#ECC8AC</color>
+    <color name="appln">#EFACAC</color>
+</resources>

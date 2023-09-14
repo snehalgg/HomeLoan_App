@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Close button at the top left corner -->
+    <ImageButton
+        android:id="@+id/closeButtonPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="Close"
+        android:layout_gravity="start"/>
+
+    <!-- Add UI elements for chatbot in this layout -->
+    <TextView
+        android:id="@+id/chatViewPopup"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+    android:textSize="16sp"
+    android:background="@drawable/chat_bubble"
+    android:padding="10dp"
+    android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/userInputPopup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+    android:hint="Type your question..."
+    android:inputType="text" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_marginTop="10dp"
+    android:layout_gravity="end"
+        android:backgroundTint="#2C3E50"/>
+
+</LinearLayout>

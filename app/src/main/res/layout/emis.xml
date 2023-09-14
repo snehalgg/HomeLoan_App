@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_edittext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loan Eligibility"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:fontFamily="@font/times_new_roman"
+            android:layout_marginBottom="100dp"
+            />
+
+            <EditText
+                android:id="@+id/editTextLoanAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:hint="Total Loan Amount (in INR)"
+                android:inputType="number"
+                android:minHeight="48dp" />
+
+            <EditText
+            android:id="@+id/editTextLoanTenure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextLoanAmount"
+            android:layout_marginTop="16dp"
+            android:hint="Loan Tenure (in years)"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextCreditScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextLoanTenure"
+            android:layout_marginTop="16dp"
+            android:autofillHints=""
+            android:hint="Credit Score"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/buttonCheckEligibility"
+                android:layout_width="306dp"
+                android:textColor="#ECF0F1"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2C3E50"
+                android:layout_below="@id/editTextCreditScore"
+                android:layout_marginTop="25dp"
+                android:text="Check Eligibility" />
+
+            <TextView
+            android:id="@+id/textViewEligibilityResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonCheckEligibility"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textStyle="bold"/>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

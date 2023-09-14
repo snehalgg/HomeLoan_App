@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- user.xml -->
+
+<!-- user.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".user">
+
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Saima"
+        android:fontFamily="@font/times_new_roman"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:columnCount="1"
+        android:rowCount="4">
+
+        <!-- Apply Now Button -->
+        <Button
+            android:id="@+id/apply_now_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Apply Now"
+            android:backgroundTint="#FFCDD2"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:outlineProvider="none"
+            app:cornerRadius="9dp"
+            />
+
+        <!-- My Loan Button -->
+        <Button
+            android:id="@+id/my_loan_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="My Loan"
+            android:backgroundTint="#C8E6C9"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:outlineProvider="none"
+            app:cornerRadius="9dp"
+            />
+
+        <!-- Track Application Button -->
+        <Button
+            android:id="@+id/track_application_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Track Application"
+            android:backgroundTint="#BBDEFB"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:outlineProvider="none"
+            app:cornerRadius="9dp"/>
+
+        <!-- Earn Rewards Button -->
+        <Button
+            android:id="@+id/loan_insurance_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Loan Insurance"
+            android:backgroundTint="#FFECB3"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:outlineProvider="none"
+            app:cornerRadius="9dp"/>
+
+
+    </GridLayout>
+
+    <!-- Refer Now Button -->
+    <Button
+        android:id="@+id/refer_now_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a refer now"
+        android:backgroundTint="#2C3E50"
+        android:textColor="#ECF0F1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
+
+

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F0F0F0"
+    tools:context=".MainActivity">
+
+<EditText
+android:id="@+id/etName"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Name"
+android:background="#FFFFFF"
+    android:textColor="#000000"
+    android:padding="8dp" />
+
+<EditText
+android:id="@+id/etEmail"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:inputType="textEmailAddress"
+android:hint="Email"
+android:background="#FFFFFF"
+android:textColor="#000000"
+android:padding="8dp" />
+
+<EditText
+android:id="@+id/etPhone"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:inputType="phone"
+android:hint="Phone Number"
+android:background="#FFFFFF"
+android:textColor="#000000"
+android:padding="8dp" />
+
+<EditText
+android:id="@+id/etAddress"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Address"
+android:background="#FFFFFF"
+android:textColor="#000000"
+android:padding="8dp" />
+
+<EditText
+android:id="@+id/etLoanAmount"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:inputType="numberDecimal"
+android:hint="Loan Amount"
+android:background="#FFFFFF"
+android:textColor="#000000"
+android:padding="8dp" />
+
+<EditText
+android:id="@+id/etInterestRate"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:inputType="numberDecimal"
+android:hint="Interest Rate"
+android:background="#FFFFFF"
+android:textColor="#000000"
+android:padding="8dp" />
+
+<EditText
+android:id="@+id/etTenure"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:inputType="number"
+android:hint="Loan Tenure (in years)"
+android:background="#FFFFFF"
+android:textColor="#000000"
+android:padding="8dp" />
+
+<Spinner
+android:id="@+id/spEmploymentStatus"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:entries="@array/employment_status"
+android:background="#FFFFFF"
+android:textColor="#000000"
+android:padding="8dp" />
+
+<EditText
+android:id="@+id/etIncome"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:inputType="numberDecimal"
+android:hint="Income"
+android:background="#FFFFFF"
+android:textColor="#000000"
+android:padding="8dp" />
+
+<Button
+android:id="@+id/btnsSubmit"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Submit"
+android:background="#1976D2"
+    android:textColor="#FFFFFF"
+    android:padding="12dp"
+    android:layout_marginLeft="150dp"/>
+    </LinearLayout>
